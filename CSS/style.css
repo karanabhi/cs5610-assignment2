@@ -1,0 +1,40 @@
+p {
+  text-align:center;
+}
+
+.h3-center{
+  text-align:center;
+}
+
+.span-blue{
+  color:blue;
+}
+.span-red{
+  color:red;
+}
+.span-purple{
+  color:purple;
+}
+.span-yellow{
+  color:yellow;
+}
+.span-pink{
+  color:pink;
+}
+.span-green{
+  color:green;
+}
+.span-silver{
+  color:silver;
+}
+.span-gold{
+  color:gold;
+}
+.span-fuchsia{
+  color:fuchsia;
+}
+table, th, td{
+  padding: 10px;
+  margin:5px;
+  border: 2px solid blue;
+}
