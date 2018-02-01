@@ -1,0 +1,37 @@
+<html>
+    <head>
+<script type ="text/javascript">
+let num = 10;
+window.onload = function () 
+{
+    document.getElementById('head_num').innerHTML=num;
+}
+
+function callAlert()
+{
+    alert(num);
+}
+
+ function incCounter() 
+ {
+    document.getElementById('head_num').innerHTML = ++num;
+ }
+
+ function addElement() 
+ {
+    var bdy = document.getElementsByTagName("body")[0]; // body element
+    var newParagraph= document.createElement("p");
+    bdy.appendChild(newParagraph);//append at the end of page
+    var node = document.createTextNode(num);
+    newParagraph.appendChild(node);
+ }
+</script>
+    </head>
+    <body>
+       <h1 id="head_num">10</h1>
+        <button name="btn-1" id="btn-1" onclick=callAlert()>Alert</button>
+        <button name="btn-2" id="btn-2" onclick="incCounter()">Increment Counter</button>
+        <button name="btn-3" id="btn-3" onclick="addElement()">Add Element</button>
+
+    </body>
+</html>
