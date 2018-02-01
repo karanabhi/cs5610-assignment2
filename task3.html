@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" href="CSS\style3.css"></link>
+<script type="text/javascript">
+
+var lorem_ipsem="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href='https://en.wikipedia.org/wiki/Lorem_ipsum'>[1]</a>";
+var bottle="99 bottles of beer on the wall, 99 bottles of beer.<br/> Take one down, pass it around, 98 bottles of beer on the wall...<br/>98 bottles of beer on the wall, 98 bottles of beer.<br/> Take one down, pass it around, 97 bottles of beer on the wall...<a href='https://en.wikipedia.org/wiki/99_Bottles_of_Beer'>[2]</a>";
+
+function lr(){
+    document.getElementById("lr").innerHTML = lorem_ipsem;
+}
+    function bottle99func() {
+        document.getElementById("bottle99").innerHTML =bottle;
+    }
+    function lt() {
+        document.getElementById("lt").innerHTML="this is the third thing";
+        }
+</script>
+</head>
+<body>
+
+    <h1 class="title-format">HW02 Task Three</h1>
+    <div class="column menu">
+            <a href="#" onclick="lr()">Lorem Ipsem</a><br/>
+            <a href="#" onClick="bottle99func()">99 Bottles</a><br/>
+            <a href="#" onclick="lt()">Last Thing</a>
+    </div>
+
+    <div class="column content">
+        <p id="lr"></p>
+        <p id="bottle99"></p>
+        <p id="lt"></p>
+    </div>
+
+
+</body>
+</html>
